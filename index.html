@@ -90,10 +90,10 @@
                 <div>
                     <h2>Approach</h2>
                     <p class="has-text-justified" v-html="approach.content"></p>
-                    <div class="block">
+                    <!-- <div class="block">
                         <el-image :src="approach.approach_image_url" class="image-main"></el-image>
                         <p class="paper-text">{{approach.approach_image_caption}}</p>
-                    </div>
+                    </div> -->
                 </div>
                 <div>
                     <h2>Experiments</h2>
@@ -114,17 +114,19 @@
                     <h2>BibTex</h2>
                     <pre>
                         <code class="bibtext-content">
-@article{liu2023llava,
-    author      = {Liu, Haotian and Li, Chunyuan and Wu, Qingyang and Lee, Yong Jae},
-    title       = {Visual Instruction Tuning},
-    publisher   = {arXiv:2304.08485},
-    year        = {2023}
+@misc{luo2023valley, 
+    title={Valley: Video Assistant with Large Language model Enhanced abilitY}, 
+    author={Ruipu Luo and Ziwang Zhao and Min Yang and Junwei Dong and Minghui Qiu and Pengcheng Lu and Tao Wang and Zhongyu Wei}, year={2023}, 
+    eprint={2306.07207}, 
+    archivePrefix={arXiv}, 
+    primaryClass={cs.CV} 
 }
                         </code>
                     </pre>
                 </div>
                 <div class="text-left">
                     <h2>Acknowledgement</h2>
+                    <p>{{acknowledgement.content}}</p>
                 </div>
             </el-main>
 
