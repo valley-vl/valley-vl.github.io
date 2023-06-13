@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Valley">
+    <meta name="keywords" content="multimodal chatbot">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Valley</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <link rel="icon"
+        href="https://raw.githubusercontent.com/kiritoD/kiritod.github.io/master/resources/icon/favicon.ico">
+    <!-- <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+        integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous"> -->
+
+</head>
+
+
+
+<body>
+    <div id="valley">
+        <el-container>
+            <el-main class="main-content">
+                <h1 class="publication-title">{{title}}</h1>
+                <div style="margin-top: 20px;">
+                    <span>Ruipu Luo<sup>1,2*</sup></span>,
+                    <span>Ziwang Zhao<sup>1,3*</sup></span>,
+                    <span>Min Yang<sup>1*</sup></span>,
+                    <span>Junwei Dong<sup>1,4</sup></span>,
+                    <span>Minghui Qiu<sup>1</sup></span>,
+                    <span>Pengcheng Lu<sup>1</sup></span>,
+                    <span>Tao Wang<sup>1</sup></span>,
+                    <span>Zhongyu Wei<sup>2</sup></span>
+                </div>
+                <div>
+                    <span><sup>1</sup>ByteDance Inc</span>&nbsp;&nbsp;
+                    <span><sup>2</sup>Fudan University</span>&nbsp;&nbsp;
+                    <span><sup>3</sup>Beijing University of Posts and Telecommunications</span>&nbsp;&nbsp;
+                    <span><sup>4</sup>Chongqing University</span>
+                </div>
+                <div style="margin-top: 20px;">
+                    <el-tag class="tag"><el-link class="link" target="_blank" :href="urls.arxiv"><i
+                                class="ai ai-arxiv ai-1x"></i>&nbsp;arXiv</el-link></el-tag>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <el-tag class="tag"><el-link class="link" target="_blank" :href="urls.code"><svg class="github"
+                                xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512">
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                            </svg>&nbsp;Code</el-link></el-tag>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <el-tag class="tag">
+                        <el-link class="link" target="_blank" :href="urls.demo">
+                            <?xml version="1.0" ?><svg id="Layer_1" class="github"
+                                style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128"
+                                xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" height="1em">
+                                <g>
+                                    <path d="M1,41h118v78H9V51H1v76h126V1H1V41z M9,9h110v24H9V9z" />
+                                    <rect height="8" width="8" x="17" y="17" />
+                                    <rect height="8" width="8" x="33" y="17" />
+                                    <rect height="8" width="42" x="69" y="17" />
+                                </g>
+                            </svg></i>&nbsp;Demo
+                        </el-link>
+                    </el-tag>
+                    <!-- <el-tag class="tag"><i class="ai ai-arxiv ai-1x"></i>&nbsp;arXiv</el-tag> -->
+                </div>
+            </el-main>
+        </el-container>
+        <el-container>
+            <el-header height="0px"></el-header>
+            <el-main direction="horizontal" style="display: block;">
+
+                <h2>ABSTRACT</h2>
+                <p class="has-text-justified" v-html="abstract.content"></p>
+            </el-main>
+            <el-main direction="horizontal" class="main-content">
+                <div>
+                    <h2>Introduction</h2>
+                    <p class="has-text-justified" v-html="introduction.content"></p>
+                    <ul class="has-text-justified">
+                        <li v-for="item in introduction.list_content">{{item}}</li>
+                    </ul>
+                    <div class="block">
+                        <el-image :src="introduction.architecture_image_url" class="image-main"></el-image>
+                        <p class="paper-text">{{introduction.architecture_image_caption}}</p>
+                    </div>
+                </div>
+                <div>
+                    <h2>Approach</h2>
+                    <p class="has-text-justified" v-html="approach.content"></p>
+                    <div class="block">
+                        <el-image :src="approach.approach_image_url" class="image-main"></el-image>
+                        <p class="paper-text">{{approach.approach_image_caption}}</p>
+                    </div>
+                </div>
+                <div>
+                    <h2>Experiments</h2>
+                    <p class="has-text-justified" v-html="experiments.content"></p>
+                    <el-carousel :interval="3000" arrow="always" height="600px">
+                        <el-carousel-item v-for="item in showcases.image_urls" :key="item" lazy>
+                            <el-image :src="item" fit="scale-down" style="width: 100%; height: 100%"></el-image>
+                        </el-carousel-item>
+                    </el-carousel>
+
+
+                </div>
+                <div>
+                    <h2>Conclusion</h2>
+                    <p class="has-text-justified" v-html="conclusion.content"></p>
+                </div>
+                <div class="bibtex text-left">
+                    <h2>BibTex</h2>
+                    <pre>
+                        <code class="bibtext-content">
+@article{liu2023llava,
+    author      = {Liu, Haotian and Li, Chunyuan and Wu, Qingyang and Lee, Yong Jae},
+    title       = {Visual Instruction Tuning},
+    publisher   = {arXiv:2304.08485},
+    year        = {2023}
+}
+                        </code>
+                    </pre>
+                </div>
+                <div class="text-left">
+                    <h2>Acknowledgement</h2>
+                </div>
+            </el-main>
+
+        </el-container>
+    </div>
+
+</body>
+<style>
+    @media screen and (max-width: 576px) {
+        #valley {
+            margin: 0 15%;
+        }
+    }
+
+    @media only screen and (min-width: 576px) {
+        #valley {
+            margin: 0 25%;
+        }
+    }
+
+
+    body {
+        font-family: 'Noto Sans', sans-serif;
+        line-height: 1.5;
+
+    }
+
+    .el-header {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .el-header,
+    .el-footer {
+        /* background-color: #B3C0D1; */
+        color: #333;
+        text-align: center;
+        /* line-height: 60px; */
+    }
+
+    .el-main {
+        background-color: #F2F6FC;
+        color: #333;
+        text-align: center;
+    }
+
+    .main-content {
+        background-color: white;
+    }
+
+    /* paper images */
+    .image-main {
+        width: 70%;
+    }
+
+    .tag {
+        border-radius: 25px;
+        border-color: #363636;
+        background-color: #363636;
+        color: #F2F6FC;
+        width: 80px;
+        font-size: 15px;
+        /* height: 50px;
+        width: 100px; */
+        /* color: #363636; */
+    }
+
+    .link {
+        color: white !important;
+    }
+
+    .link:hover {
+        text-decoration: underline;
+    }
+
+    .github {
+        fill: white
+    }
+
+    /* paper text */
+    code,
+    kbd,
+    pre,
+    samp {
+        font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    h2 {
+        color: #363636
+    }
+
+    .text-left {
+        text-align: left;
+    }
+
+    .publication-title {
+        font-family: 'Google Sans', sans-serif;
+        font-weight: 600;
+    }
+
+    .paper-text {
+        font-family: Times New Roman;
+    }
+
+    .has-text-justified {
+        text-align: justify !important;
+    }
+
+    /* .lb-text {
+        text-align: left;
+    } */
+
+    /* href */
+    .href_1 {
+        color: purple
+    }
+
+    /* bibtex */
+
+    .bibtex pre {
+        overflow-x: auto;
+        padding: 1.25em 1.5em;
+        white-space: pre;
+        word-wrap: normal;
+        background-color: #f5f5f5;
+        display: block;
+        font-size: 87.5%;
+        color: #212529;
+    }
+
+    .bibtex-text {
+        font-weight: 400;
+    }
+</style>
+<script src="https://unpkg.com/vue@2/dist/vue.js"></script>
+<!-- import JavaScript -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script>
+    var cdn = "https://raw.githubusercontent.com/kiritoD/kiritod.github.io/master/resources";
+    paper_data = {
+        title: "VALLEY: VIDEO ASSISTANT WITH LARGE LANGUAGE MODEL ENHANCED ABILITY",
+        urls: {
+            arxiv: "https://arxiv.org/pdf/2306.07207.pdf",
+            code: "https://github.com/RupertLuo/Valley",
+            demo: "https://huggingface.co/luoruipu1/valley-13b-v1-delta"
+
+        },
+        abstract: {
+            content: "Recently, several multi-modal models have been developed for joint image and language understanding, which have demonstrated impressive chat abilities by utilizing advanced large language models (LLMs). The process of developing such models is straightforward yet effective. It involves pre-training an adaptation module to align the semantics of the vision encoder and language model, followed by fine-tuning on instruction-following data. However, despite the success of this pipeline in image and language understanding, its effectiveness in joint video and language understanding has not been widely explored. In this paper, we aim to develop a novel multi-modal foundation model capable of perceiving video, image, and language within a general framework. To achieve this goal, we introduce Valley: Video Assistant with Large Language model Enhanced abilitY. Specifically, our proposed Valley model is designed with a simple projection module that bridges video, image, and language modalities, and is further unified with a multi-lingual LLM. We also collect multi-source vision-text pairs and adopt a spatio-temporal pooling strategy to obtain a unified vision encoding of video and image input for pre-training. Furthermore, we generate multi-task instruction-following video data, including multi-shot captions, long video descriptions, action recognition, causal relationship inference, etc. To obtain the instruction-following data, we design diverse rounds of task-oriented conversations between humans and videos, facilitated by ChatGPT. Qualitative examples demonstrate that our proposed model has the potential to function as a highly effective multilingual video assistant that can make complex video understanding scenarios easy. Code, data, and models will be available at <a href='https://github.com/RupertLuo/Valley' class='href_1'>https://github.com/RupertLuo/Valley</a>."
+
+        },
+        introduction: {
+            content: "The rapid growth of video applications and data has created a pressing need for automated technology to analyze and comprehend video content. This is particularly important for applications such as video surveillance, content-based video retrieval, and video summarization. However, existing video understanding models are often task-specific and lack a comprehensive capability of handling diverse tasks. In light of this, we endeavor to construct a foundational model that can automatically comprehend and analyze various video elements, such as actions, objects, scenes, emotions, and other pertinent components, and subsequently integrate these components to address a broad range of tasks, including video classification, object detection, action recognition, and video question-answering. Thus, it is imperative to develop more comprehensive and general video understanding models, which represent a crucial research direction for video understanding.",
+            list_content: [
+                'We propose Valley, a multi-modal foundation model with general perception ability of video, image, and language that could be a video assistant capable of engaging in multilingual conversations. In this work, we make a nontrivial change to the original vision encoder through a spatio-temporal pooling strategy to get unified visual tokens and only use a simple projection layer to connect vision with language inspired by LLaVA.',
+                'We collect a large multi-modal instruction-following dataset, which focuses on video understanding and comprises diverse types of tasks, including multi-short captions, temporal descriptions with timestamps, and complex statements with long videos. We also leverage ChatGPT to generate conversations between humans and video content, which further enhances the quality and diversity of the dataset.',
+                'We will open-source all our resources, including the pre-training dataset and the generated multi-modal instruction data collected from various video tasks. In addition, prompts on how to instruct ChatGPT to design and generate the conversations based on the original content of video data will also be made public. Finally, all model weights and chat demos will be released. This will enable researchers to reproduce our experiments and facilitate further advancements in the field of multi-modal video understanding.'
+            ],
+            architecture_image_url: cdn + '/images/valley_architecture.png',
+            architecture_image_caption: 'Figure 1: Valley architecture.'
+        },
+        related_work: {
+            content: ""
+        },
+        approach: {
+            content: "In order to allow pre-trained LLM to understand videos and adapt videos of different lengths together with individual images, we add a spatio-temporal pooling module to the vision encoder to aggregate each frame’s grid features as unified vision tokens, while keeping the rest structures the same with LLaVA (Liu et al., 2023) using a simple yet effective projection layer to connect the vision tokens to LLM. We choose Stable-Vicuna as the language interface since it exhibits superior multilingual chat abilities. The overall architecture is shown in Figure 1.",
+        },
+        experiments: {
+            content: "In our experiments, we employ the Stable-Vicuna (Chiang et al., 2023) as the LLM backbone and the pre-trained ViT-L/14 from CLIP to encode videos and images. We first pre-train Valley for one epoch with a learning rate of 2e-3 and then fine-tune the model for three epochs with a learning rate of 2e-5 on the instruction dataset. All the experiments are conducted on 8×A100 80G GPUs."
+        },
+        conclusion: {
+            content: "The objective of our work is to construct a foundation model that is capable of perceiving video, image, and language in a multi-modal manner. To address this issue, we propose a framework called Valley, which stands for Video Assistant With Large Language Model Enhanced Ability. We utilize a spatio-temporal pooling approach to extract a unified vision encoding from video and image inputs, gather a large set of vision-text pairs for pre-training, and then generate a multi-task instruction-following video dataset among which the conversations are designed with the help of ChatGPT. Ultimately, our goal is to create a more intuitive, personalized, and human-like interaction between humans and machines."
+        },
+        showcases: {
+            image_urls: [
+                cdn + '/images/showcase1.png',
+                cdn + '/images/showcase2.jpg',
+                cdn + '/images/showcase3.jpg',
+                cdn + '/images/showcase4.jpg',
+
+            ]
+        },
+        bibtex: {
+            content: "@misc{luo2023valley, title={Valley: Video Assistant with Large Language model Enhanced abilitY}, author={Ruipu Luo and Ziwang Zhao and Min Yang and Junwei Dong and Minghui Qiu and Pengcheng Lu and Tao Wang and Zhongyu Wei}, year={2023}, eprint={2306.07207}, archivePrefix={arXiv}, primaryClass={cs.CV} }"
+        },
+        acknowledgement: {
+            content: 'We thank LLaVA for providing the instruction data and LLaMA for giving us access to their models, and open-source projects, including Alpaca and Vicuna.'
+        }
+
+    }
+    new Vue({
+        el: '#valley',
+        data: function () {
+            return paper_data
+        }
+    })
+</script>
+
+</html>
